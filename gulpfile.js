@@ -12,6 +12,20 @@ var gulp = require('gulp'),
   htmlreplace = require('gulp-html-replace'),
   cssmin = require('gulp-cssmin');
 
+gulp.task('jekyll-build', function(done) {
+  return cp.spawn('bundle', [
+      'exec',
+      'jekyll',
+      'build',
+      '--watch',
+      '--incremental',
+      '--baseurl='
+    ], {
+      stdio: 'inherit',
+    })
+    .on('close', done);
+});
+
 gulp.task("concatScripts", function() {
   return gulp.src([
       'assets/js/vendor/jquery-3.3.1.slim.min.js',
@@ -85,7 +99,7 @@ gulp.task('serve', ['watchFiles'], function() {
     logPrefix: "󠁧󠁢󠁳󠁣󠁴⚡️",
     proxy: "http://localhost:8888",
     open: "external"
-});
+  });
 
   gulp.watch("assets/css/**/*.scss", ['watchFiles']);
   gulp.watch(['**/*.html', '**/*.php']).on('change', browserSync.reload);

@@ -41,7 +41,5 @@ Temporary Items
 *.js.map
 
 ### Node modules ###
-node_modules/
-
-### Distribution/build folder ###
-dist/
+node_modules/on/build folder ###
+docs/
