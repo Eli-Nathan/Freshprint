@@ -8610,7 +8610,7 @@ hr {
 .hero {
   margin-top: 58px;
   padding: 90px 0;
-  background: url("/assets/img/hero.jpg") no-repeat center center/cover;
+  background: url("/assets/img/hero.jpg") no-repeat center center fixed/cover;
   color: #fff; }
   @media (min-width: 768px) {
     .hero {
@@ -8630,5 +8630,19 @@ hr {
       width: 100%;
       display: block;
       margin-top: 12px; } }
+
+.aim {
+  padding: 80px 0; }
+  @media (min-width: 576px) {
+    .aim {
+      padding: 120px 0; } }
+
+.services {
+  padding: 90px 0;
+  background: url("/assets/img/hero.jpg") no-repeat center center fixed/cover;
+  color: #fff; }
+  @media (min-width: 768px) {
+    .services {
+      padding: 200px 0; } }
 
 /*# sourceMappingURL=main.css.map */

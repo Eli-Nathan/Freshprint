@@ -1,7 +1,7 @@
 .hero {
   margin-top: 58px;
   padding: 90px 0;
-  background: url("/assets/img/hero.jpg") no-repeat center center / cover;
+  background: url("/assets/img/hero.jpg") no-repeat center center fixed / cover;
   color: #fff;
   @include media-breakpoint-up(md) {
     margin-top: 90px;
@@ -30,5 +30,21 @@
         margin-top:12px;
       }
     }
+  }
+}
+
+.aim {
+  padding: 80px 0;
+  @include media-breakpoint-up(sm) {
+    padding: 120px 0;
+  }
+}
+
+.services {
+  padding: 90px 0;
+  background: url("/assets/img/hero.jpg") no-repeat center center fixed / cover;
+  color: #fff;
+  @include media-breakpoint-up(md) {
+    padding: 200px 0;
   }
 }
