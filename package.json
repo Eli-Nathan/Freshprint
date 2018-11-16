@@ -1,12 +1,12 @@
 {
-  "name": "bootstrap-4-boiler-plate",
+  "name": "Freshprint",
   "version": "1.0.0",
-  "description": "a bootstrap 4 boiler plate with sass, concatenation, minification, autoprefixer, sourcemaps, browser-sync, git and gulp task runner",
+  "description": "An update for Freshprint using Bootstrap 4",
   "main": "index.js",
   "scripts": {
     "test": "echo \\\"Error: no test specified\\\" && exit 1"
   },
-  "author": "wapbamboogie",
+  "author": "Eli Nathan",
   "license": "ISC",
   "repository": {
     "type": "git",
@@ -23,6 +23,10 @@
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^4.0.1",
     "gulp-sourcemaps": "^2.6.4",
-    "gulp-uglify": "^3.0.0"
+    "gulp-uglify": "^3.0.0",
+    "sass-lint": "^1.12.1",
+    "stylelint": "^9.5.0",
+    "stylelint-config-prettier": "^4.0.0",
+    "stylelint-scss": "^3.3.0",
   }
 }

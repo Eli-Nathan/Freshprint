@@ -1,19 +1,31 @@
 //====================================
 // Global Imports
 //====================================
-
-
 // 1- Import bootstrap framework
 @import '1-frameworks/index';
-
 // 2 - Import plugins
 @import '2-plugins/index';
-
 // 3 - Import base style, custom variables and mixins
 @import '3-base/index';
-
 // 4 - Import modules
 @import '4-modules/index';
-
 // 5 - Import layout  styles
 @import '5-layout/index';
+// Fonts
+@font-face {
+  font-family: 'Nexa-light';
+  src: url("/assets/fonts/nexa-light.otf") format('opentype');
+}
+@font-face {
+  font-family: 'Nexa-bold';
+  font-weight: bold;
+  src: url("/assets/fonts/nexa-bold.otf") format('opentype');
+}
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+// Variables
+@import 'var';
+// Import component styles
+@import '6-components/index';
+// Import page styles
+@import '7-pages/index';

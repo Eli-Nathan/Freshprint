@@ -1,0 +1,20 @@
+.navbar {
+  background: #fff;
+
+  .navbar-brand {
+    font-family: 'Nexa-bold', 'Roboto', verdana, sans-serif;
+    text-transform: uppercase;
+    color: $headings-color;
+
+    img {
+      width:120px;
+    }
+  }
+
+  li {
+    a {
+      font-family: 'Nexa-light', 'Roboto', verdana;
+      color: $gray-800;
+    }
+  }
+}
