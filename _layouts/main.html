@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  {% if page.noindex %}
+    <meta name="robots" content="noindex">
+  {% endif %}
+  <title>{{ page.title }}</title>
+  <meta name="description" content="{% if page.meta_description %}{{ page.meta_description }}{% else %}{{ site.description }}{% endif %}">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="description" content="Fresh Print provides printing solutions in Glasgow. We aim to be the most reliable design, print and sign making company with the fastest turnaround in the UK, and we’re doing pretty well so far.">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <!-- build:css -->
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css">
+  <!-- endbuild -->
+</head>
+
+<body>

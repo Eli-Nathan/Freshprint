@@ -1,0 +1,28 @@
+body {
+  background: #fafafa;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Nexa-bold', 'Roboto', verdana;
+}
+
+h1, h2, h3 {
+  text-transform: uppercase;
+}
+
+p, li, a {
+  font-family: 'Roboto', verdana;
+}
+
+p, li {
+  font-size: 18px;
+}
+
+hr {
+  background: $yellow;
+  height:3px;
+  border-color: $yellow;
+  @include media-breakpoint-up(lg) {
+    width:50%;
+  }
+}
