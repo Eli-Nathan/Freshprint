@@ -28,10 +28,10 @@
           <a class="nav-link" href="#">Our aim</a>
         </li>
         <li class="nav-item px-md-3">
-          <a class="nav-link" href="#">Products</a>
+          <a class="nav-link" href="#">Services</a>
         </li>
         <li class="nav-item px-md-3">
-          <a class="nav-link" href="#">Services</a>
+          <a class="nav-link" href="#">Products</a>
         </li>
         <li class="nav-item px-md-3">
           <a class="nav-link" href="#">Contact</a>
