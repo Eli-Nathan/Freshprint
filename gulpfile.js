@@ -97,7 +97,7 @@ gulp.task("build", ['minifyScripts', 'minifyCss'], function() {
 gulp.task('serve', ['watchFiles'], function() {
   browserSync.init({
     logPrefix: "󠁧󠁢󠁳󠁣󠁴⚡️",
-    proxy: "http://localhost:8888",
+    proxy: "http://127.0.0.1:4000/",
     open: "external"
   });
 
