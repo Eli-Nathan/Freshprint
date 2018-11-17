@@ -8632,10 +8632,12 @@ hr {
       margin-top: 12px; } }
 
 .aim {
+  text-align: left;
   padding: 80px 0; }
   @media (min-width: 576px) {
     .aim {
-      padding: 120px 0; } }
+      padding: 120px 0;
+      text-align: center; } }
 
 .services {
   padding: 90px 0;
@@ -8644,5 +8646,52 @@ hr {
   @media (min-width: 768px) {
     .services {
       padding: 200px 0; } }
+
+.products {
+  padding: 50px 0; }
+  @media (min-width: 576px) {
+    .products {
+      padding: 120px 0; } }
+  .products .item-box {
+    position: relative;
+    padding-left: 56px;
+    margin-bottom: 24px; }
+    @media (min-width: 576px) and (max-width: 767.98px) {
+      .products .item-box {
+        text-align: center;
+        padding-left: 0;
+        padding-top: 56px; } }
+    .products .item-box::before {
+      font-family: FontAwesome;
+      font-style: normal;
+      font-weight: normal;
+      text-decoration: inherit;
+      color: #6c757d;
+      font-size: 32px;
+      position: absolute;
+      top: 12px;
+      left: 14px; }
+      @media (min-width: 576px) and (max-width: 767.98px) {
+        .products .item-box::before {
+          left: calc(50% - 20px);
+          text-align: center;
+          top: 0; } }
+      @media (min-width: 768px) {
+        .products .item-box::before {
+          top: -5px;
+          left: 0; } }
+    .products .item-box--printing::before {
+      content: "\f02f"; }
+    .products .item-box--card::before {
+      content: "\f2c2";
+      font-size: 28px; }
+    .products .item-box--building::before {
+      content: "\f1ad"; }
+    .products .item-box--file::before {
+      content: "\f15c"; }
+    .products .item-box--plane::before {
+      content: "\f1d8"; }
+    .products .item-box--pen::before {
+      content: "\f1fc"; }
 
 /*# sourceMappingURL=main.css.map */
