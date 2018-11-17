@@ -96,26 +96,26 @@
 
     &--card {
       &::before {
-        content: "\f2c2";
+        content: "\f0c4";
         font-size: 28px;
       }
     }
 
     &--building {
       &::before {
-        content: "\f1ad";
+        content: "\f02e";
       }
     }
 
-    &--file {
+    &--sign {
       &::before {
-        content: "\f15c";
+        content: "\f03e";
       }
     }
 
-    &--plane {
+    &--wrench {
       &::before {
-        content: "\f1d8";
+        content: "\f0ad";
       }
     }
 

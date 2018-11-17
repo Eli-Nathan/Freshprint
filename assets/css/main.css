@@ -8683,14 +8683,14 @@ hr {
     .products .item-box--printing::before {
       content: "\f02f"; }
     .products .item-box--card::before {
-      content: "\f2c2";
+      content: "\f0c4";
       font-size: 28px; }
     .products .item-box--building::before {
-      content: "\f1ad"; }
-    .products .item-box--file::before {
-      content: "\f15c"; }
-    .products .item-box--plane::before {
-      content: "\f1d8"; }
+      content: "\f02e"; }
+    .products .item-box--sign::before {
+      content: "\f03e"; }
+    .products .item-box--wrench::before {
+      content: "\f0ad"; }
     .products .item-box--pen::before {
       content: "\f1fc"; }
 

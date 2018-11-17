@@ -46,30 +46,33 @@
   <div class="products">
     <div class="container">
       <div class="row">
-        <div class="products__intro col-md-12 col-lg-2">
-          <h2 class="products__heading">Our products</h2>
+        <div class="products__intro col-md-12 col-lg-3">
+          <h2 class="products__heading">At Your Service</h2>
           <hr class="ml-0">
+          <p>
+            Here are a few of the services we offer, however, we can print almost anything so please get in touch if you need something else.
+          </p>
         </div>
-        <div class="products__items col-md-12 col-lg-9 offset-lg-1">
+        <div class="products__items col-md-12 col-lg-9">
           <div class="row">
             <div class="item-box item-box--printing col-sm-4">
-              <h4 class="item-box__heading">Banners & posters</h4>
+              <h4 class="item-box__heading">Printed vinyls</h4>
               <p class="item-box__copy">Lorem ipsum dolor sit amet so lorem.</p>
             </div>
             <div class="item-box item-box--card col-sm-4">
-              <h4 class="item-box__heading">Business cards</h4>
+              <h4 class="item-box__heading">Cut out vinyls</h4>
               <p class="item-box__copy">Lorem ipsum dolor sit amet so lorem.</p>
             </div>
             <div class="item-box item-box--building col-sm-4">
-              <h4 class="item-box__heading">Business printing</h4>
+              <h4 class="item-box__heading">Banners</h4>
               <p class="item-box__copy">Lorem ipsum dolor sit amet so lorem.</p>
             </div>
-            <div class="item-box item-box--file col-sm-4">
-              <h4 class="item-box__heading">Documents</h4>
+            <div class="item-box item-box--sign col-sm-4">
+              <h4 class="item-box__heading">Signage</h4>
               <p class="item-box__copy">Lorem ipsum dolor sit amet so lorem.</p>
             </div>
-            <div class="item-box item-box--plane col-sm-4">
-              <h4 class="item-box__heading">Delivery</h4>
+            <div class="item-box item-box--wrench col-sm-4">
+              <h4 class="item-box__heading">Installation</h4>
               <p class="item-box__copy">Lorem ipsum dolor sit amet so lorem.</p>
             </div>
             <div class="item-box item-box--pen col-sm-4">
