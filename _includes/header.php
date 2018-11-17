@@ -7,7 +7,7 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="description" content="This is a boilerplate for a Bootstrap 4.1.1 project">
   <meta name="keywords" content="HTML, CSS, JS, Sass, JavaScript, framework, bootstrap, front-end, frontend, web development">
-  <title>Bootstrap 4 boilerplate</title>
+  <title><?php $pageTitle = $pageTitle ? $pageTitle : "Fresh Print | Glasgow"; echo $pageTitle; ?></title>
   <link rel="shortcut icon" href="favicon.ico">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
   <!-- build:css -->

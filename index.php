@@ -1,4 +1,7 @@
-<?php include "_includes/header.php"; ?>
+<?php
+  $pageTitle = "Home | Fresh print";
+  include "_includes/header.php";
+?>
 <div class="hero text-center">
   <div class="container">
     <div class="row">
