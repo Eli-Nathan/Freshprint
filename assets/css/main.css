@@ -8639,13 +8639,26 @@ hr {
       padding: 120px 0;
       text-align: center; } }
 
-.services {
+.testimonial {
   padding: 90px 0;
-  background: url("/assets/img/hero.jpg") no-repeat center center fixed/cover;
-  color: #fff; }
-  @media (min-width: 768px) {
-    .services {
-      padding: 200px 0; } }
+  color: #fff;
+  background: url("/assets/img/hero.jpg") no-repeat center center/cover; }
+  @media (min-width: 576px) {
+    .testimonial {
+      background: url("/assets/img/hero.jpg") no-repeat center center fixed/cover; } }
+  .testimonial__copy {
+    font-size: 28px;
+    font-weight: 600;
+    font-family: 'Nexa-bold', 'Roboto', verdana;
+    text-shadow: 0 2px 3px #000; }
+    @media (min-width: 768px) {
+      .testimonial__copy {
+        width: 55%;
+        margin: 0 auto; } }
+  .testimonial__name {
+    font-size: 18px; }
+  .testimonial__stars i {
+    color: #FBDB0C; }
 
 .products {
   padding: 50px 0; }
@@ -8662,15 +8675,12 @@ hr {
         padding-left: 0;
         padding-top: 56px; } }
     .products .item-box::before {
-      font-family: FontAwesome;
-      font-style: normal;
-      font-weight: normal;
       text-decoration: inherit;
       color: #6c757d;
-      font-size: 32px;
       position: absolute;
       top: 12px;
-      left: 14px; }
+      left: 14px;
+      width: 32px; }
       @media (min-width: 576px) and (max-width: 767.98px) {
         .products .item-box::before {
           left: calc(50% - 20px);
@@ -8681,17 +8691,17 @@ hr {
           top: -5px;
           left: 0; } }
     .products .item-box--printing::before {
-      content: "\f02f"; }
+      color: #6c757d;
+      content: url("/assets/img/print.svg"); }
     .products .item-box--card::before {
-      content: "\f0c4";
-      font-size: 28px; }
+      content: url("/assets/img/cut.svg"); }
     .products .item-box--building::before {
-      content: "\f02e"; }
+      content: url("/assets/img/bookmark.svg"); }
     .products .item-box--sign::before {
-      content: "\f03e"; }
+      content: url("/assets/img/sign.svg"); }
     .products .item-box--wrench::before {
-      content: "\f0ad"; }
+      content: url("/assets/img/wrench.svg"); }
     .products .item-box--pen::before {
-      content: "\f1fc"; }
+      content: url("/assets/img/paint-brush.svg"); }
 
 /*# sourceMappingURL=main.css.map */

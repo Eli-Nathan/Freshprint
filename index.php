@@ -29,15 +29,23 @@
     </div>
   </div>
 
-  <div class="services text-center">
+  <div class="testimonial text-center">
     <div class="container">
       <div class="row">
         <div class="col-sm-12">
-          <h2 class="hero__heading">Our services</h2>
-          <p class="hero__copy">Get in touch and let us show you how fast, reliable and affordable we are!</p>
-          <div class="mt-4 hero__btns">
-            <a href="#" class="btn btn-fresh btn-lg mx-1">Find out more</a>
-          </div>
+          <p class="testimonial__copy"><i class="fas fa-quote-left"></i> &nbsp; Brilliant guys, done a fantastic job of my banners.
+            Quality product well presented at a reasonable price. Very pleased.
+          </p>
+          <p class="testimonial__name">
+            Benjamin James
+          </p>
+          <p class="testimonial__stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </p>
         </div>
       </div>
     </div>

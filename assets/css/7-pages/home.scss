@@ -42,12 +42,32 @@
   }
 }
 
-.services {
+.testimonial {
   padding: 90px 0;
-  background: url("/assets/img/hero.jpg") no-repeat center center fixed / cover;
   color: #fff;
-  @include media-breakpoint-up(md) {
-    padding: 200px 0;
+  background: url("/assets/img/hero.jpg") no-repeat center center / cover;
+  @include media-breakpoint-up(sm) {
+    background: url("/assets/img/hero.jpg") no-repeat center center fixed / cover;
+  }
+  &__copy {
+    font-size: 28px;
+    font-weight: 600;
+    font-family: 'Nexa-bold', 'Roboto', verdana;
+    text-shadow: 0 2px 3px #000;
+    @include media-breakpoint-up(md) {
+      width: 55%;
+      margin: 0 auto;
+    }
+  }
+
+  &__name {
+    font-size: 18px;
+  }
+
+  &__stars {
+    i {
+      color: $yellow;
+    }
   }
 }
 
@@ -68,15 +88,12 @@
     }
 
     &::before {
-      font-family: FontAwesome;
-      font-style: normal;
-      font-weight: normal;
       text-decoration: inherit;
       color: $gray-600;
-      font-size: 32px;
       position: absolute;
       top: 12px;
       left: 14px;
+      width:32px;
       @include media-breakpoint-only(sm) {
         left:calc(50% - 20px);
         text-align: center;
@@ -90,38 +107,38 @@
 
     &--printing {
       &::before {
-        content: "\f02f";
+        color: $gray-600;
+        content: url("/assets/img/print.svg");
       }
     }
 
     &--card {
       &::before {
-        content: "\f0c4";
-        font-size: 28px;
+        content: url("/assets/img/cut.svg");
       }
     }
 
     &--building {
       &::before {
-        content: "\f02e";
+        content: url("/assets/img/bookmark.svg");
       }
     }
 
     &--sign {
       &::before {
-        content: "\f03e";
+        content: url("/assets/img/sign.svg");
       }
     }
 
     &--wrench {
       &::before {
-        content: "\f0ad";
+        content: url("/assets/img/wrench.svg");
       }
     }
 
     &--pen {
       &::before {
-        content: "\f1fc";
+        content: url("/assets/img/paint-brush.svg");
       }
     }
   }
