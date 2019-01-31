@@ -92,4 +92,37 @@
       </div>
     </div>
   </div>
+
+  <div class="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+          <h2 class="aim__heading text-center">Contact us</h2>
+          <hr>
+          <p class="aim__copy text-center">Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!</p>
+        </div>
+
+        <div class="col-sm-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+          <form action="#" method="POST">
+            <label class="form-label" for="name">Name</label>
+            <input class="form-input" type="text" placeholder="Your name here" name="name" id="name" />
+            <label class="form-label" for="name">Email</label>
+            <input class="form-input" type="email" placeholder="Your email here" name="email" id="email" />
+            <div class="box">
+              <p class="synth-label">File upload</p>
+    					<input type="file" name="file[]" id="file" class="inputfile sr-only" data-multiple-caption="{count} files selected" multiple />
+    					<label for="file">
+                <strong>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17"><path d="M10 0l-5.2 4.9h3.3v5.1h3.8v-5.1h3.3l-5.2-4.9zm9.3 11.5l-3.2-2.1h-2l3.4 2.6h-3.5c-.1 0-.2.1-.2.1l-.8 2.3h-6l-.8-2.2c-.1-.1-.1-.2-.2-.2h-3.6l3.4-2.6h-2l-3.2 2.1c-.4.3-.7 1-.6 1.5l.6 3.1c.1.5.7.9 1.2.9h16.3c.6 0 1.1-.4 1.3-.9l.6-3.1c.1-.5-.2-1.2-.7-1.5z"/></svg> Choose a file&hellip;
+                </strong>
+                <span></span>
+              </label>
+    				</div>
+            <label for="comments" class="form-label">Your message</label>
+            <textarea name="comments" id="comments" class="form-input form-input--textarea"></textarea>
+            <button type="submit" class="btn btn-fresh btn-lg">Send it!</button>
+        </div>
+      </div>
+    </div>
+  </div>
   <?php include "_includes/footer.php"; ?>

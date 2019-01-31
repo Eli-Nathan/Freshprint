@@ -10,12 +10,12 @@
 
   &__heading {
     @include media-breakpoint-down(sm) {
-      font-size:28px;
+      font-size: 28px;
     }
   }
 
   &__copy {
-    font-size:22px;
+    font-size: 22px;
     @include media-breakpoint-up(lg) {
       width: 50%;
       margin: 0 auto;
@@ -27,7 +27,7 @@
       @include media-breakpoint-down(sm) {
         width: 100%;
         display: block;
-        margin-top:12px;
+        margin-top: 12px;
       }
     }
   }
@@ -45,10 +45,8 @@
 .testimonial {
   padding: 90px 0;
   color: #fff;
-  background: url("/assets/img/hero.jpg") no-repeat center center / cover;
-  @include media-breakpoint-up(sm) {
-    background: url("/assets/img/hero.jpg") no-repeat center center fixed / cover;
-  }
+  background: url("/assets/img/hero.jpg") no-repeat center center fixed / cover;
+
   &__copy {
     font-size: 28px;
     font-weight: 600;
@@ -93,9 +91,9 @@
       position: absolute;
       top: 12px;
       left: 14px;
-      width:32px;
+      width: 32px;
       @include media-breakpoint-only(sm) {
-        left:calc(50% - 20px);
+        left: calc(50% - 20px);
         text-align: center;
         top: 0;
       }
@@ -141,5 +139,166 @@
         content: url("/assets/img/paint-brush.svg");
       }
     }
+  }
+}
+
+.contact {
+  padding: 90px 0;
+  color: #fff;
+  background: url("/assets/img/hero.jpg") no-repeat center center fixed / cover;
+
+  p {
+    text-shadow: 0 2px 3px #000;
+  }
+
+  form {
+    .form-input,
+    .form-label {
+      display: block;
+      width: 100%;
+    }
+
+    .form-label {
+      color: #fff;
+      text-shadow: 0 2px 3px #000;
+      font-family: "Roboto";
+    }
+
+    .form-input {
+      border: none;
+      background: #fff;
+      height: 48px;
+      border-radius: 3px;
+      margin-bottom: 12px;
+      padding: 0 12px;
+      font-size: 18px;
+
+      &--textarea {
+        height: 200px;
+      }
+    }
+
+    .js .inputfile {
+      width: 0.1px;
+      height: 0.1px;
+      opacity: 0;
+      overflow: hidden;
+      position: absolute;
+      z-index: -1;
+    }
+
+    .inputfile + label {
+      max-width: 100%;
+      font-size: 1.25rem;
+      /* 20px */
+      font-weight: 700;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      cursor: pointer;
+      display: inline-block;
+      overflow: hidden;
+      padding: 0.625rem 1.25rem;
+      width: 100%;
+      /* 10px 20px */
+    }
+
+    .no-js .inputfile + label {
+      display: none;
+    }
+
+    .inputfile {
+      &.has-focus + label {
+        outline: 1px dotted #000;
+        outline: -webkit-focus-ring-color auto 5px;
+      }
+
+      &:focus {
+        + label {
+          outline: 1px dotted #000;
+          outline: -webkit-focus-ring-color auto 5px;
+        }
+
+        + label {
+          border-color: #FBDB0C;
+        }
+      }
+
+      + label {
+        * {
+          /* pointer-events: none; */
+          /* in case of FastClick lib use */
+        }
+
+        svg {
+          width: 1em;
+          height: 1em;
+          vertical-align: middle;
+          fill: currentColor;
+          margin-top: -0.25em;
+          /* 4px */
+          margin-right: 0.25em;
+          /* 4px */
+        }
+        color: #212529;
+        border: 1px solid #FBDB0C;
+        background-color: #fff;
+        padding: 0;
+      }
+
+      &.has-focus + label {
+        border-color: #FBDB0C;
+      }
+
+      + label {
+        &:hover {
+          border-color: #FBDB0C;
+        }
+
+        span,
+        strong {
+          padding: 0.625rem 1.25rem;
+          /* 10px 20px */
+        }
+
+        span {
+          width: 200px;
+          min-height: 2em;
+          display: inline-block;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          overflow: hidden;
+          vertical-align: top;
+        }
+
+        strong {
+          height: 100%;
+          color: #212529;
+          background-color: #FBDB0C;
+          display: inline-block;
+          font-weight: 400;
+        }
+      }
+
+      &.has-focus + label strong,
+      &:focus + label strong,
+      + label:hover strong {
+        background-color: #FBDB0C;
+      }
+    }
+    @media screen and (max-width: 50em) {
+      .inputfile + label strong {
+        display: block;
+      }
+    }
+
+    .synth-label {
+      font-size: 16px;
+      margin-bottom: 6px;
+    }
+  }
+
+  button {
+    margin-top: 12px;
+    color: $text;
   }
 }
