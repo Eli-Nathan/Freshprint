@@ -8642,10 +8642,7 @@ hr {
 .testimonial {
   padding: 90px 0;
   color: #fff;
-  background: url("/assets/img/hero.jpg") no-repeat center center/cover; }
-  @media (min-width: 576px) {
-    .testimonial {
-      background: url("/assets/img/hero.jpg") no-repeat center center fixed/cover; } }
+  background: url("/assets/img/hero.jpg") no-repeat center center fixed/cover; }
   .testimonial__copy {
     font-size: 28px;
     font-weight: 600;
@@ -8703,5 +8700,112 @@ hr {
       content: url("/assets/img/wrench.svg"); }
     .products .item-box--pen::before {
       content: url("/assets/img/paint-brush.svg"); }
+
+.contact {
+  padding: 90px 0;
+  color: #fff;
+  background: url("/assets/img/hero.jpg") no-repeat center center fixed/cover; }
+  .contact p {
+    text-shadow: 0 2px 3px #000; }
+  .contact form .form-input,
+  .contact form .form-label {
+    display: block;
+    width: 100%; }
+  .contact form .form-label {
+    color: #fff;
+    text-shadow: 0 2px 3px #000;
+    font-family: "Roboto"; }
+  .contact form .form-input {
+    border: none;
+    background: #fff;
+    height: 48px;
+    border-radius: 3px;
+    margin-bottom: 12px;
+    padding: 0 12px;
+    font-size: 18px; }
+    .contact form .form-input--textarea {
+      height: 200px; }
+  .contact form .js .inputfile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1; }
+  .contact form .inputfile + label {
+    max-width: 100%;
+    font-size: 1.25rem;
+    /* 20px */
+    font-weight: 700;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    padding: 0.625rem 1.25rem;
+    width: 100%;
+    /* 10px 20px */ }
+  .contact form .no-js .inputfile + label {
+    display: none; }
+  .contact form .inputfile.has-focus + label {
+    outline: 1px dotted #000;
+    outline: -webkit-focus-ring-color auto 5px; }
+  .contact form .inputfile:focus + label {
+    outline: 1px dotted #000;
+    outline: -webkit-focus-ring-color auto 5px; }
+  .contact form .inputfile:focus + label {
+    border-color: #FBDB0C; }
+  .contact form .inputfile + label {
+    color: #212529;
+    border: 1px solid #FBDB0C;
+    background-color: #fff;
+    padding: 0; }
+    .contact form .inputfile + label * {
+      /* pointer-events: none; */
+      /* in case of FastClick lib use */ }
+    .contact form .inputfile + label svg {
+      width: 1em;
+      height: 1em;
+      vertical-align: middle;
+      fill: currentColor;
+      margin-top: -0.25em;
+      /* 4px */
+      margin-right: 0.25em;
+      /* 4px */ }
+  .contact form .inputfile.has-focus + label {
+    border-color: #FBDB0C; }
+  .contact form .inputfile + label:hover {
+    border-color: #FBDB0C; }
+  .contact form .inputfile + label span,
+  .contact form .inputfile + label strong {
+    padding: 0.625rem 1.25rem;
+    /* 10px 20px */ }
+  .contact form .inputfile + label span {
+    width: 200px;
+    min-height: 2em;
+    display: inline-block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    vertical-align: top; }
+  .contact form .inputfile + label strong {
+    height: 100%;
+    color: #212529;
+    background-color: #FBDB0C;
+    display: inline-block;
+    font-weight: 400; }
+  .contact form .inputfile.has-focus + label strong,
+  .contact form .inputfile:focus + label strong,
+  .contact form .inputfile + label:hover strong {
+    background-color: #FBDB0C; }
+  @media screen and (max-width: 50em) {
+    .contact form .inputfile + label strong {
+      display: block; } }
+  .contact form .synth-label {
+    font-size: 16px;
+    margin-bottom: 6px; }
+  .contact button {
+    margin-top: 12px;
+    color: #212529; }
 
 /*# sourceMappingURL=main.css.map */
