@@ -1,4 +1,5 @@
 <?php
+  include "_includes/formHandler.php";
   $pageTitle = "Home | Fresh print";
   include "_includes/header.php";
 ?>
@@ -109,7 +110,8 @@
             <label class="form-label" for="name">Email</label>
             <input class="form-input" type="email" placeholder="Your email here" name="email" id="email" />
             <div class="box">
-              <p class="synth-label">File upload</p>
+              <p class="synth-label">File upload (Max 2MB)</p>
+              <p class="error-message"><?php echo $errors; ?></p>
     					<input type="file" name="file[]" id="file" class="inputfile sr-only" data-multiple-caption="{count} files selected" multiple />
     					<label for="file">
                 <strong>
@@ -120,7 +122,7 @@
     				</div>
             <label for="comments" class="form-label">Your message</label>
             <textarea name="comments" id="comments" class="form-input form-input--textarea"></textarea>
-            <button type="submit" class="btn btn-fresh btn-lg">Send it!</button>
+            <button type="submit" name="submit" class="btn btn-fresh btn-lg">Send it!</button>
         </div>
       </div>
     </div>
