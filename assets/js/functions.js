@@ -1,8 +1,3 @@
-/*
-	By Osvaldas Valutis, www.osvaldas.info
-	Available for use under the MIT License
-*/
-
 'use strict';
 
 ;( function ( document, window, index )
@@ -32,3 +27,7 @@
 		input.addEventListener( 'blur', function(){ input.classList.remove( 'has-focus' ); });
 	});
 }( document, window, 0 ));
+
+document.querySelector("button[type='submit']").addEventListener("click", function() {
+	document.querySelector(".alert-info").classList.toggle("d-none");
+});
