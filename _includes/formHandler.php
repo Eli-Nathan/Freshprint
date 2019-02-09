@@ -2,7 +2,7 @@
 $errors = "";
   if(isset($_POST['submit']) && isset($_POST['email']) && isset($_POST['name'])) {
 
-    if(isset($_FILES['image'])) {
+    if(isset($_FILES['image']) || !empty($_FILES['image'])) {
 
       function reArrayFiles(&$file_post) {
 
@@ -18,7 +18,7 @@ $errors = "";
         return $file_ary;
       }
 
-      if ($_FILES['image']) {
+      if (isset($_FILES['image'])) {
         $file_ary = reArrayFiles($_FILES['image']);
 
         foreach ($file_ary as $file) {
@@ -61,7 +61,9 @@ $errors = "";
     $email = $_REQUEST['email'];
     $name = $_REQUEST['name'];
     $message = $_REQUEST['comments'];
-    isset($file_name) ? $message .= " <br /> <br /> <br /> --- " . $name . " attached the following files --- <br />" : $message = $message;
+    if (isset($_FILES['image']) || !empty($_FILES['image'])) {
+     $message .= " <br /> <br /> <br /> --- " . $name . " attached the following files --- <br />";
+    }
     require("phpmailer/PHPMailerAutoload.php");
 
     $mail = new PHPMailer();
@@ -70,7 +72,7 @@ $errors = "";
     $mail->SMTPAuth = true;
     $mail->Username = "hello@elisweb.co.uk"; // SMTP username
     $mail->Password = "Relapse93!"; // SMTP password
-    if ($_FILES['image']) {
+    if (isset($_FILES['image']) || !empty($_FILES['image'])) {
       $file_ary = reArrayFiles($_FILES['image']);
       foreach ($file_ary as $file) {
         $file_name = $file['name'];
