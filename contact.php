@@ -34,10 +34,10 @@ require("phpmailer/PHPMailerAutoload.php");
 
 $mail = new PHPMailer();
 $mail->IsSMTP();
-$mail->Host = "mail.fresh-print.com";
+$mail->Host = "SMTP HOST NAME HERE";
 $mail->SMTPAuth = true; 
-$mail->Username = "hello@fresh-print.com"; // SMTP username
-$mail->Password = "hello100"; // SMTP password
+$mail->Username = "EMAIL ADDRESS HERE"; // SMTP username
+$mail->Password = "PASSWORD HERE"; // SMTP password
 $mail->addAttachment("uploads/".$file_name);
 $mail->From = $email;
 $mail->SMTPSecure = 'ssl'; 
